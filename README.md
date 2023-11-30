@@ -66,7 +66,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/worldwide" />
+                        app:srcCompat="@drawable/iconhello" />
                     <TextView
                         android:id="@+id/textView0"
                         android:layout_width="match_parent"
@@ -96,7 +96,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/mathematics_symbols" />
+                        app:srcCompat="@drawable/iconcount" />
                     <TextView
                         android:id="@+id/textView1"
                         android:layout_width="match_parent"
@@ -132,7 +132,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/clapperboard" />
+                        app:srcCompat="@drawable/iconscroll" />
                     <TextView
                         android:id="@+id/textView2"
                         android:layout_width="match_parent"
@@ -162,7 +162,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/alarm__1_" />
+                        app:srcCompat="@drawable/iconalarm" />
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
@@ -198,7 +198,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/messaging" />
+                        app:srcCompat="@drawable/iconactivity" />
                     <TextView
                         android:id="@+id/textView4"
                         android:layout_width="match_parent"
@@ -228,7 +228,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/gps" />
+                        app:srcCompat="@drawable/iconmap" />
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
@@ -248,7 +248,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
 ![tampilan](https://github.com/zulaeha168/Tugaspert10/assets/130324650/1cb28790-dde5-41f5-ad97-e40ef88da4e2)
 > - Setelah itu kita buka `MainActivity.java` untuk menambahkan code intent untuk masing-masing tombol :
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -393,7 +393,7 @@ f. Project Maps = MainActivity.java (karena merupakan Implicit Intent, jadi code
 - `Strings.xml` 
 ```
 <resources>
-    <string name="app_name">cipaapps</string>
+    <string name="app_name">ProjectZulaeha</string>
     <string name="Hello_World">Hello World!!</string>
     <string name="button_main">Send</string>
     <string name="editText_main">Enter Your Message Here</string>
@@ -427,15 +427,16 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
     <color name="colorPrimary">#3F5185</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="birumuda">#ABCBFA</color>
     <color name="salem">#F8C6E6</color>
     <color name ="purple">#E3A2ED</color>
-    <color name="hijau">#92A676</color>
     <color name="biru">#8FC2EA</color>
     <color name="hijaumuda">#C2E69C</color>
-    <color name="kuning">#FFEB3B</color>
-    <color name="orange">#FF9800</color>
     <color name="cream">#E6C18A</color>
+    <color name="coklat">#65362c</color>
+    <color name="abu">#B0B0B2</color>
+    <color name="tosca">#70AE98</color>
+    <color name="soft">#AED9EA</color>
+    <color name="pastel">#5E96AE</color>
 </resources>
 ```
 - `Dimens.xml` 
@@ -476,7 +477,7 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
 
 > `SplashScreen.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -660,7 +661,7 @@ public class SplashScreen extends AppCompatActivity {
 ```
 > `TwoActivity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -706,7 +707,7 @@ public class TwoActivity extends AppCompatActivity {
 ```
 > `Two2Activity.java`
 ```
-package com.cipaapps;
+package com.projectzulaeha;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -757,7 +758,7 @@ public class Two2Activity extends AppCompatActivity {
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/alarm__1_" />
+                        app:srcCompat="@drawable/iconalarm" />
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
@@ -791,7 +792,7 @@ public class Two2Activity extends AppCompatActivity {
                         android:layout_height="wrap_content"
                         android:layout_margin="16dp"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/gps" />
+                        app:srcCompat="@drawable/iconmap" />
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
@@ -857,5 +858,5 @@ private void openMaps(Uri geoLocation) {
 ```
 ## Hasil Run 
 - Berikut adalah hasil running dari aplikasi yang telah saya buat :
-https://github.com/syifaaurellia/IntentProject2/assets/115867244/c11c2259-1e5b-4924-b8e1-de1e7e9987c6
+https://github.com/zulaeha168/Tugaspert10/assets/130324650/fa0f7749-3c2e-4900-8f87-cb533a141859
 ## Finish, Terima Kasih
