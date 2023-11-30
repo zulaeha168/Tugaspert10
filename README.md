@@ -245,7 +245,7 @@ Jika awal pembuatan project kita memilih template Empty Views Activity, maka pad
 </RelativeLayout>
 ```
 > - Maka tampilan menu utama akan seperti ini :
-![WhatsApp Image 2023-11-28 at 21 28 52_8da8d5d2](https://github.com/syifaaurellia/IntentProject2/assets/115867244/62ab10ca-0192-48a1-b22a-5d771d8fda4c)
+![tampilan](https://github.com/zulaeha168/Tugaspert10/assets/130324650/1cb28790-dde5-41f5-ad97-e40ef88da4e2)
 > - Setelah itu kita buka `MainActivity.java` untuk menambahkan code intent untuk masing-masing tombol :
 ```
 package com.cipaapps;
