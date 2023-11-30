@@ -11,6 +11,12 @@ Mata Kuliah : Pemrograman Mobile 1
 Dosen Pengampu : Donny Maulana, S.Kom.,M.M.S.I.
 
 ## Tugas :
+Buatlah tampilan menu Versi 02 dari project-project yang sudah dibuat sebelumnya 
+
+dengan tambahan memanggil method Maps
+
+dengan tampilan sebagai berikut :
+
 ![launcherlogo](https://github.com/zulaeha168/Tugaspert10/assets/130324650/6b208b0d-1218-4d4d-b9d3-c42f12f0fab2)
 ## 1. Menu Utama 
 Pertama yang harus kita lakukan adalah mengganti tampilan menu utamanya dengan code yang baru agar ikon tombol berubah menjadi gambar, caranya adalah :
