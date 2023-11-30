@@ -1,12 +1,15 @@
-@@ -1,568 +1,596 @@
 # TugasPert10
+
 Nama : Zulaeha
+
 NIM : 312210575
+
 Kelas : TI.22.A5
+
 Mata Kuliah : Pemrograman Mobile 1
 
 ## Tugas :
-![tugas p10](https://github.com/syifaaurellia/IntentProject2/assets/115867244/439f806f-6f3d-4712-b9f4-c70c77f8a4e7)
+![launcherlogo](https://github.com/zulaeha168/Tugaspert10/assets/130324650/6b208b0d-1218-4d4d-b9d3-c42f12f0fab2)
 ## 1. Menu Utama 
 Pertama yang harus kita lakukan adalah mengganti tampilan menu utamanya dengan code yang baru agar ikon tombol berubah menjadi gambar, caranya adalah :
 Jika awal pembuatan project kita memilih template Empty Views Activity, maka pada layout otomatis terbuat file `activity_main.xml` dan pada java akan ada `MainActivity.java`. Maka langsung saja kita buka `activity_main.xml`, dan buat code seperti berikut ini:
