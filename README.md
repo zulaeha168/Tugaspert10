@@ -858,5 +858,7 @@ private void openMaps(Uri geoLocation) {
 ```
 ## Hasil Run 
 - Berikut adalah hasil running dari aplikasi yang telah saya buat :
+  
 https://github.com/zulaeha168/Tugaspert10/assets/130324650/fa0f7749-3c2e-4900-8f87-cb533a141859
+
 ## Finish, Terima Kasih
