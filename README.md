@@ -481,7 +481,57 @@ Film dokumenter buatan Netflix ini menyoroti rangkaian persidangan yang saat itu
 ```
 
 ## A. Code Project Hello World
-## A. Code Project Splash Screen
+> `activity_hello.xml`
+```
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelloActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgcream"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/txthello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hello World!!"
+        android:textColor="@color/coklat"
+        android:textSize="20pt"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413"
+        tools:ignore="TextSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+> `HelloActivity.java`
+```
+package com.projectzulaeha;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+public class HelloActivity extends AppCompatActivity{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_hello);
+    }
+}
+```
+## B. Code Project Splash Screen
 
 > `SplashScreen.java`
 ```
@@ -504,35 +554,288 @@ public class SplashScreen extends AppCompatActivity {
     }
 }
 ```
-
-## B. Code Project Hello World
-> `activity_hello.xml`
-```
-<?xml version="1.0" encoding="utf-8"?>
-@@ -618,7 +646,7 @@ public class HelloActivity extends AppCompatActivity{
-}
-```
-
 ## B. Code Project Count
-## C. Code Project Count
 > `activity_count.xml`
 ```
 <?xml version="1.0" encoding="utf-8"?>
-@@ -849,7 +877,7 @@ public class CountActivity extends AppCompatActivity {
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText"
+    tools:context=".CountActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgbiru"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+
+    <Button
+        android:id="@+id/button_limit"
+        android:layout_width="354dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/pastel"
+        android:onClick="setLimit"
+        android:text="Masukkan Angka Limit"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="173dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/pastel"
+        android:onClick="countUp"
+        android:text="Count"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_width="173dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/pastel"
+        android:onClick="back1"
+        android:text="Restart"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="305dp"
+        android:layout_height="442dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="160sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_limit"
+        app:layout_constraintVertical_bias="0.51"
+        tools:ignore="RtlCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+```
+> `CountActivity.java`
+```
+package com.projectzulaeha;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+public class CountActivity extends AppCompatActivity {
+    private TextView show_count;
+    private int count = 1;
+    private long fibNMinus1 = 1;
+    private long fibNMinus2 = 1;
+    private int limit = -1; // Inisialisasi limit dengan nilai default
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_count);
+        show_count = findViewById(R.id.show_count);
+    }
+    public void countUp(View view) {
+        if (count == 0) {
+            show_count.setText("0");
+        }
+        else if (count == 1) {
+            show_count.setText("1");
+        }
+        else {
+            if (limit != -1 && count > limit) {
+                // Jika count melebihi limit, atur ulang perhitungan
+                count = 0;
+                fibNMinus1 = 1;
+                fibNMinus2 = 0;
+                show_count.setText(getString(R.string.count_initial_value));
+            }
+            else {
+                long fibCurrent = fibNMinus1 + fibNMinus2;
+                fibNMinus2 = fibNMinus1;
+                fibNMinus1 = fibCurrent;
+                //Mengatur warna teks berdasarkan angka Fibonacci
+                int colorResId = R.color.colorAccent; // Warna Default
+                switch (count % 11) {
+                    case 1:
+                        colorResId = R.color.colorAccent; // Warna Pink Tua
+                        break;
+                    case 2:
+                        colorResId = R.color.hijaumuda; // Warna Hijau Muda
+                        break;
+                    case 3:
+                        colorResId = R.color.purple; // Warna Ungu
+                        break;
+                    case 4:
+                        colorResId = R.color.salem; // Warna Salem
+                        break;
+                    case 5:
+                        colorResId = R.color.birumuda; // Warna Biru Muda
+                        break;
+                    case 6 :
+                        colorResId = R.color.kuning; // Warna Kuning
+                        break;
+                    case 7:
+                        colorResId = R.color.hijau; // Warna Hijau
+                        break;
+                    case 8:
+                        colorResId = R.color.cream; // Warna Cream
+                        break;
+                    case 9:
+                        colorResId = R.color.pink; // Warna Pink
+                        break;
+                    case 10:
+                        colorResId = R.color.biru; // Warna Biru
+                        break;
+                    case 11:
+                        colorResId = R.color.orange; // Warna Orange
+                        break;
+                }
+                show_count.setTextColor(getResources().getColor(colorResId));
+                show_count.setText(String.valueOf(fibCurrent));
+            }
+        }
+        count++;
+    }
+    public void back1(View view) {
+        count = 1;
+        fibNMinus1 = 1;
+        fibNMinus2 = 0;
+        show_count.setText(getString(R.string.count_initial_value));
+    }
+    public void setLimit(View view) {
+        // Create and display a dialog to set the limit
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Set Limit");
+        final EditText input = new EditText(this);
+        input.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        builder.setView(input);
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // Get the limit from the input and set it for calculations
+                String limitStr = input.getText().toString();
+                limit = Integer.parseInt(limitStr);
+            }
+        });
+        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        builder.show();
+    }
 }
 ```
 
 ## C. Code Project Scroll Movie
-## D. Code Project Scroll Movie
 > `activity_scrollmovie.xml`
 ```
 <?xml version="1.0" encoding="utf-8"?>
-@@ -921,7 +949,7 @@ public class SianidaActivity extends AppCompatActivity {
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SianidaActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/abu"
+        android:padding="@dimen/padding_regular"
+        android:text="@string/article_title"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bglightabu"
+        android:layout_below="@id/article_heading">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/article_subheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/article_subtitle"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textColor="#1AA0C1" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:lineSpacingExtra="@dimen/line_spacing"
+                android:padding="@dimen/padding_regular"
+                android:text="@string/article_text"
+                tools:ignore="VisualLintLongText" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+```
+> `SianidaActivity.java`
+```
+package com.projectzulaeha;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+public class SianidaActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_scrollmovie);
+    }
 }
 ```
-
-## Code Project Two Activity
-## E. Code Project Two Activity
+## D. Code Project Two Activity
 > `activity_twoactivity.xml`
 ```
 <?xml version="1.0" encoding="utf-8"?>
@@ -744,7 +1047,7 @@ public class Two2Activity extends AppCompatActivity {
     }
 }
 ```
-## Code Project SetAlarm dan Maps
+## E. Code Project SetAlarm dan Maps
 > Pertama, buatlah ikon tombol terlebih dahulu pada `activity_main.xml`, bersama dengan ikon tombol aplikasi lainnya :
 - `Set Alarm`
 ```
